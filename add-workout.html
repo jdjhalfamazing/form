@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Workout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Add Workout</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Sign Up</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>Add Workout for Date: <span id="selected-date"></span></h2>
+    <form id="workout-form">
+      <div>
+        <label for="workout-type">Workout Type:</label>
+        <select id="workout-type" required>
+          <option value="">Select</option>
+          <option value="cardio">Cardio</option>
+          <option value="strength">Strength Training</option>
+          <option value="yoga">Yoga</option>
+          <!-- Add more workout types as needed -->
+        </select>
+      </div>
+      <div id="sub-workout-container" style="display: none;">
+        <label for="sub-workout">Sub Workout:</label>
+        <select id="sub-workout" required>
+          <option value="">Select</option>
+          <!-- Sub workout options will be dynamically added here -->
+        </select>
+      </div>
+      <div id="specific-workout-container" style="display: none;">
+        <label for="specific-workout">Specific Workout:</label>
+        <select id="specific-workout" required>
+          <option value="">Select</option>
+          <!-- Specific workout options will be dynamically added here -->
+        </select>
+      </div>
+      <div>
+        <label for="duration">Duration (minutes):</label>
+        <input type="number" id="duration" min="1" required>
+      </div>
+      <div>
+        <label for="intensity">Intensity (1-10):</label>
+        <input type="number" id="intensity" min="1" max="10" required>
+      </div>
+      <div>
+        <label for="sets">Sets:</label>
+        <input type="number" id="sets" min="1">
+      </div>
+      <div>
+        <label for="reps">Reps:</label>
+        <input type="number" id="reps" min="1">
+      </div>
+      <!-- Calories burned will be displayed after adding workout -->
+      <div id="calories-burned" style="display: none;">
+        <label for="calories">Calories Burned:</label>
+        <span id="calories"></span>
+      </div>
+      <button type="submit">Add Workout</button>
+    </form>
+    <a href="index.html">Go Back to Home</a> <!-- Link to navigate back to home page -->
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Workout App. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="add-workout.js"></script>
+</body>
+</html>

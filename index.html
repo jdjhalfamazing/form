@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Welcome to Your Workout Planner</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" id="home-link">Home</a></li>
+          <li><a href="profile.html" id="profile-link">Profile</a></li>
+          <li><a href="sign-up.php" id="sign-up">Sign Up</a></li>
+          <li><a href="#" id="logout-link">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>Select a Date and Add Your Workout</h2>
+  </div>
+
+  <div class="container">
+    <!-- Calendar section -->
+    <section id="calendar">
+      <div id="calendar-container">
+        <!-- Calendar will be dynamically generated here -->
+      </div>
+    </section>
+
+    <!-- Added workout container -->
+    <div id="added-workout-container">
+      <h2>Today's Workouts</h2>
+      <ul id="workout-list">
+        <!-- Added workouts will be dynamically displayed here -->
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; Joebeast Technologies. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="calendar.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

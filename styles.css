@@ -1,0 +1,171 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header, footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Calendar Section */
+#calendar {
+  position: relative;
+  background-image: url('https://images.pexels.com/photos/2827392/pexels-photo-2827392.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#calendar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Dark overlay color with transparency */
+  border-radius: inherit;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-date {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  background-color: #ffffff6e; /* Adjusted background color for better readability */
+  position: relative; /* Position relative for overlay */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.197);
+}
+.calendar-date-header {
+  padding: 10px;
+  text-align: center;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+}
+
+
+
+.calendar-date.disabled {
+  color: #ccc;
+}
+
+#calendar-container {
+  padding: 10px;
+}
+
+/* Added Workout Container */
+#added-workout-container {
+  margin-top: 20px; /* Added margin for better separation */
+}
+
+.added-workout {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.added-workout h2 {
+  margin-top: 0;
+}
+
+.delete-workout {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.delete-workout:hover {
+  background-color: #d32f2f;
+}
+
+/* Form Styles */
+form {
+  margin-top: 20px; /* Add some margin to separate from header */
+}
+
+form > div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
